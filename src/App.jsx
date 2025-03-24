@@ -8,8 +8,8 @@ export default function App() {
   const [isLoading, setIsLoading] = useState(true);
   useEffect(() => {
     const fetchData = async () => {
-      await new Promise((resolve) => setTimeout(resolve, 3000)); 
-      setIsLoading(false); 
+      await new Promise((resolve) => setTimeout(resolve, 3000));
+      setIsLoading(false);
     };
 
     fetchData();
@@ -17,8 +17,11 @@ export default function App() {
 
   if (isLoading) {
     return (
-      <div className="loader-container">
-        <ClipLoader color="#000000" size={50} />
+      <div className='loader-container'>
+        <ClipLoader
+          color='#000000'
+          size={50}
+        />
       </div>
     );
   }

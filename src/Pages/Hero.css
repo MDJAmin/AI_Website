@@ -1,9 +1,9 @@
-.model{
-    height: 100vh !important;
-    width: auto !important;
+.model {
+  height: 100vh !important;
+  width: auto !important;
 }
 @media only screen and (max-width: 1250px) {
-.model{
+  .model {
     height: 100vh !important;
-}
   }
+}
